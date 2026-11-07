@@ -16,7 +16,7 @@ app.add_middleware(
 
 # ⚠️ БУЛ ЖЕРГЕ GROQ'ТОН АЛГАН ЖАҢЫ КЛЮЧУҢУЗДУ КОЮҢУЗ (gsk_... деп башталат)
 # Эгер Render'де Environment Variable аркылуу кошкон болсоңуз, бул жерди бош калтырсаңыз да болот:
-GROQ_KEY = os.environ.get("GROQ_KEY", "СИЗДИН_КЛЮЧУҢУЗ") 
+GROQ_KEY = os.environ.get("GROQ_KEY", "") 
 client = Groq(api_key=GROQ_KEY)
 
 class ChatRequest(BaseModel):
